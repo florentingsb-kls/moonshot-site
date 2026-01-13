@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maintenances — Validation des signaux</title>
+  <link rel="stylesheet" href="../../assets/referentieltechnicien.css" />
+</head>
+
+<body>
+
+<!-- BARRE DU HAUT -->
+<header class="topbar">
+    <a href="../../index.html" class="brand-link" aria-label="Retour au sommaire">
+      <div class="brand">
+        <div class="brand-mark"></div>
+        <div class="brand-text">
+          <div class="brand-title">Référentiel Moonshot</div>
+          <div class="brand-subtitle">Support Technique — Sommaire</div>
+        </div>
+      </div>
+    </a>
+  </header>
+
+
+
+<main class="wrap">
+<section class="panel">
+      <h1>MAINTENANCE MISE A JOUR</h1>
+      <h2>MISE A JOUR MOONSHOT</h2>
+
+      <p><strong>
+        Le numéro client existe déjà</strong>. La mise à jour peut se faire d’un ancien panel vers
+Moonshot ou d’un système FAST vers Moonshot. Pour ce faire le technicien doit
+faire un transfert de panneau dans la partie maintenance de I&M.
+Pour réaliser une MAJ vers MOONSHOT, le technicien devra appeler le support
+technique 2 fois avant de commencer son installation :</p>
+
+      <p><strong>Premier appel</strong></p>
+      <p>Avant de procéder à la mise à jour lorsque l’ancien panel est une FAST, il est
+        impératif que le technicien contacte le support technique afin de supprimer la
+        licence Sigfox du système Fast.</p>
+
+        <p><strong>Deuxième appel</strong></p>
+      <p>Il aura lieu une fois le provisionning validé avec les 4 coches vertes, quand le pop-up demandant de contacter le support technique pour changer le panel apparaît.
+        L’agent du support technique pourra passer le panel en SDVECU et vérifier la
+        conformité du CID (si le CID commence par 01, aucun changement nécessaire. Si le
+        CID commence par 02, il sera nécessaire de le modifier sous le format suivant :
+        « 01-num installation »).
+        S’il s’agit d’un ancien panel Médiaveil, le support technique devra impérativement
+        penser à modifier la case « Mon Br » et y notifier « FRM102 ».</p>
+    </div>
+  <p></p>
+
+  <section class="panel">
+    <div class="note">Lors de l’appel du Technicien pour finaliser son intervention ou sa validation, l’agent
+        du support technique devra vérifier la totalité des points suivants : </div>
+        <p><strong>LES POINTS DE CONTRÔLE DU SUPPORT TECHNIQUE</strong></p>
+        <ul class="list">
+            <li>Confirmer la totalité des déclenchements</li>
+            <li> Vérifier la conformité des images</li>
+            <li> Vérifier le test de communication et le niveau GSM (Minimum 2 en 4G)</li>
+            <li>Vérifier l’absence de défaut sur l’installation</li>
+            <li>Vérifier le respect des quotas d’installation des éléments (Orions, BAC, caméras, etc.)</li>
+            <li>Si caméra sur l’installation vérifier le nombre des caméras, présence ou pas d’un hub, niveau
+                RSSI et niveau batterie pour les caméras et vérifier les images si remontées</li>
+                <li>Vérifier l’absence de défaut technique sur l’installation</li>
+                <li>Vérifier que la centrale est bien en CCS</li>
+                <li>Si BAC sur l’installation, Vérifier les informations du BAC dans inst.Comp (case acti, clé tir,date d’expiration )</li>
+                <li>Vérifier le statut de l’installation. Si l’installation est encore en IFAC, il faut laisser installation
+                    opérationnelle sur le validateur PC puis faire un passage en Acti manuelle et sortir de test.</li>
+                <li>Vérifier la présence du Econtrat dans Basics sur SBN</li>
+                <li>Confirmer avec le technicien s’il s’agit d’une Reprise, Reconnexion ou Réinstallation, simple ou avec Mise à jour.</li>
+          </ul>
+
+          <p><strong>GESTION DU ECONTRAT PAR LE SUPPORT TECHNIQUE</strong>
+          </p>
+
+          <ul class="list">
+            <li>Si le Econtrat est présent, l’agent du support technique devra ouvrir une maintenance 3R
+                avec les bonnes codifications et la clôturer dans la foulée en mettant fin d’install, mise en
+                service et aucun item</li>
+            <li> Si le Econtrat n’est pas présent, l’agent devra vérifier auprès d’un master ou d’un superviseur
+                qu’il a bien été réalisé avant d’ouvrir une maintenance 3R et la clôturer.
+                </li>
+            <li>  Si le technicien ne peut pas réaliser son Econtrat, il devra réaliser un contrat papier puis le
+                support technique validera sa maintenance afin qu’il réalise un bon de travaux pour
+                déstocker son matériel.</li>
+            <li>Renseigner le member et vérifier qu’il n’y pas de maintenance laissée ouverte sur l’ancien
+                numéro client. Si c’est le cas, la clôturer sans visite.</li>
+            <li>Laisser une note « reprise ok » « reinstall ok » « reconnexion ok » en fonction de la 3R dans
+                alarm log</li>
+          </ul>
+  </section>
+
+  <p></p>
+  <section class="panel">
+      <h1>PASSAGE EN VT D’UNE MISE A JOUR</h1>
+      <h2>PASSAGE EN VT PAR LE SUPPORT TECHNIQUE</h2>
+
+      <p>Dans le cas de la MAJ irréalisable, le technicien peut solliciter le passage en VT de la maintenance. En
+        fonction du motif, la prise en charge peut être effectuée par le support technique ou le service à
+        l’origine de la maintenance soit le service mise à jour. </p>
+
+        <div class="note">Le support technique est habilité à prendre en charge les passages en VT pour les cas suivants :</div>
+        <ul class="list">
+            <li> Travaux</li>
+            <li> Problèmes outils & Applications métiers</li>
+            <li> Non-conformité</li>
+          </ul>
+
+      <p>Dans ces cas de figure, la maintenance sera validée avec incidence.</p>
+      <p><strong>CAS PARTICULIER : S’il s’agit d’un Réseau GSM insuffisant, un SERVICE PLUS RESEAU sera obligatoire. </strong></p>
+
+<p></p>
+
+        <h2>PASSAGE EN VT PAR LE SERVICE MISE A JOUR</h2>
+        <div class="note">Dans le cas de figure où le client décide de ne plus donner son accord pour la mise à jour pour les 
+            motifs suivants :</div>
+            <ul class="list">
+                <li> Facturation</li>
+                <li>  Changement d’avis</li>
+                <li> Besoin d’un temps de réflexion</li>
+              </ul>
+
+              <p>Le technicien doit contacter le service MAJ qui a ouvert la maintenance pour demander un passage en VT.</p>
+              <p>Une fois la maintenance codifiée en VT, il peut alors solliciter le support technique pour valider son
+                intervention. Le collaborateur du ST valide alors la maintenance en validation correcte sur Bolid (sans incidence).</p>
+    </section>
+
+<p></p>
+
+    <section class="panel">
+        <strong><h2>Il est impératif pour le collaborateur du support technique de :</strong></h2>
+            <ul class="list">
+                <li> Laisser une note explicative dans alarm log pour expliquer les raisons de la VT.</li>
+                <li>  Remettre l’ancien système (type de système, version, carte sim, etc).</li>
+                <li>  Retirer la skill Moonshot.</li>
+                <li>  Si le CID commençait par 02 avant la mise à jour, il sera nécessaire de le remodifier
+                    sous le format originel (cf. onglet « changelog »).</li>
+                <li>  Si il s’agissait d’un ancien panel Médiaveil, le support technique devra
+                    impérativement penser à modifier la case « Mon Br » et y notifier « Mediav ».</li></ul>
+    </section>
+  </section>
+  <p></p>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maintenances — Validation des signaux</title>
+  <link rel="stylesheet" href="../../assets/referentieltechnicien.css" />
+</head>
+
+<body>
+
+<!-- BARRE DU HAUT -->
+<header class="topbar">
+    <a href="../../index.html" class="brand-link" aria-label="Retour au sommaire">
+      <div class="brand">
+        <div class="brand-mark"></div>
+        <div class="brand-text">
+          <div class="brand-title">Référentiel Moonshot</div>
+          <div class="brand-subtitle">Support Technique — Sommaire</div>
+        </div>
+      </div>
+    </a>
+  </header>
+
+
+
+<main class="wrap">
+<section class="panel">
+      <h1>SERVICE PLUS </h1>
+      <section class="panel">
+      <h2>SERVICE PLUS RESEAU</h2>
+
+      <p><strong>Faire un test réseau avec le boitier CSL et envoyer plusieurs captures écran sur contactST@verisure.fr</strong></p>
+      <p>Dans le cadre de l’amélioration continue sur le traitement des cas service plus, il a été décidé de passer sur une 
+        mesure plus affinée : le RSCP (distance et puissance du signal sont comptabilisés).
+        Ci-dessous les valeurs de références :</p>
+
+        <img src="../../assets/img/img-referentiel/img-servplus-reseau-CSL.PNG" alt="servplus-reseau-CSL" />
+
+        <p>Pour rappel, le CSL nous aide dans le processus de la prise de décision. Il est essentiel de réaliser une analyse
+            complémentaire de l’installation afin de déterminer si le service plus doit être pris en charge ou non.
+        <strong>Par ailleurs, il est impératif que le boitier CSL soit à jour lors du test CSL, sans quoi la demande de service plus est
+    refusée par le support technique.</strong></p>
+
+      <p>Si le technicien ne possède pas de boitier CSL, il devra faire plusieurs tests comme déplacer la centrale, changer la
+sim, opérateur, et en dernier changer la centrale.</p>
+
+<p><strong>Lorsqu'un Technicien contacte le support technique pour une demande de Service Plus réseau sur le système
+    MOONSHOT, Il est impératif qu'un changement de centrale vers une version 1.8 soit réalisé avant la mise en place du
+    Service Plus.
+    Si le changement de centrale vers la version 1.8 n'est pas réalisé, le support technique ne pourra pas accepter la mise
+    en place du Service Plus.</strong></p>
+</section>
+<p></p>
+<section class="panel">
+    <h2>PROCEDER</h2>
+    <p>Après vérification, <strong>le support technique</strong> peut décider en fonction des éléments fournis (Test réseau CSL ou résultats des tests
+        réalisés par le technicien) de passer l’installation en service plus réseau. Dans ce cas de figure l’agent doit procéder comme
+        suit :</p>
+
+        <p><strong>1-</strong> Sur Infopoint, accéder à la maintenance du technicien. Dans éditer, j’enregistre les codifications s’il y a du déstockage. Le support 
+            technique ne clôture pas pour l’instant, mais enregistre seulement</p>
+        <p><strong>2-</strong> Créer et envoyer le ticket au technicien via MGO (catégorie historisation).</p>
+
+            <img src="../../assets/img/img-referentiel/img-servplus-reseau-fsm 1.PNG" alt="servplus-reseau-fsm 1" />
+
+        <p><strong>3-</strong> Quand le technicien aura envoyé le rapport, le support technique reçoit une notification dans le canal teams dédié. Le support 
+            technique doit liker la notification obligatoirement.</p>
+        <p><strong>4-</strong>  Le support technique peut retourner sur la maintenance du technicien, éditer et codifier en INC-INCIDENT/MAINTENANCE NON 
+            FINALISEE puis clore la maintenance en FINI.</p>
+        <p><strong>5-</strong> le support technique ouvre une maintenance pour le service plus (call type DEPANNAGE/ COMMUNICATION pour les service plus 
+            réseau). Et indiquer SERVPLUS dans le LOG.</p>
+
+            <img src="../../assets/img/img-referentiel/img-servplus-reseau-fsm 2.PNG" alt="servplus-reseau-fsm 2" />
+  </section>
+  <p></p>
+
+</main>
+</body>
+</html>

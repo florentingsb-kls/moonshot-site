@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maintenances — Validation des signaux</title>
+  <link rel="stylesheet" href="../../assets/referentieltechnicien.css" />
+</head>
+
+<body>
+
+<!-- BARRE DU HAUT -->
+<header class="topbar">
+    <a href="../../index.html" class="brand-link" aria-label="Retour au sommaire">
+      <div class="brand">
+        <div class="brand-mark"></div>
+        <div class="brand-text">
+          <div class="brand-title">Référentiel Moonshot</div>
+          <div class="brand-subtitle">Support Technique — Sommaire</div>
+        </div>
+      </div>
+    </a>
+  </header>
+
+<main class="wrap">
+<section class="panel">
+      <h1>DOC MANAGER </h1>
+      <section class="panel">
+        <p>Il s’agit des maintenances ouvertes par le support technique à la suite du contrôle
+            d’installation réalisé à J+2. Ces maintenances sont obligatoirement codifiées en
+            Finir/installation et attribuées à ES30. Les motifs de blocage sont les suivants :
+            </p>
+
+            <ul class="list">
+                <li>Défaut de supervision</li>
+                <li>Problème image</li>
+                <li> Défaut de pile / batterie / secteur</li>
+                <li>Défaut de communication</li>
+
+                <li> Défaut de transmission</li>
+                <li>Installation Carton</li>
+                <li>Arlo</li>
+                <li>Problème BAC</li>
+                <li>Problème OPDI</li>
+                <li>Déclenchements intempestifs</li>
+                <li>Problème statut client</li>
+                <li>Autre (audit de sécurité manquant, etc.)</li>
+              </ul>
+
+              <p>Dans le cadre d’une maintenance doc manager, l’expert sécurité doit contacter le
+                support technique dans un premier temps afin d’attribuer la maintenance ES30 à
+                ses logs pour qu’il puisse ensuite intervenir chez son client.</p>
+
+                <p>En fonction du motif du blocage, le déblocage du doc manager se fera soit dans un
+                    délai de deux jours ouvrables (J+2) soit le jour même de l’intervention.</p>
+
+                    <p><strong>SUIVI DES DM SUR DEUX JOURS OUVRABLES </strong></p>
+
+                    <p>Il s’agit des docs managers ouverts pour défaut de communication et ou absence de transmission.
+                        L’ES doit, dans ce cas de figure, intervenir pour solutionner le défaut et refaire une validation
+                        complète des signaux.</p>
+
+                        <p>L’ES a finalisé sa validation en toute autonomie. Il doit obligatoirement recontacter le support
+technique pour clôturer sa maintenance avec les bonnes codifications de ce qui a été réalisé chez le client.</p>
+
+                            <p>L’ES n’a pas réussi à se valider en toute autonomie. L’ES a dans ce cas la possibilité de contacter le
+                                support technique pour finaliser la validation et clôturer la maintenance.</p>
+
+                                <p>Si l’installation est conforme et que le défaut est résolu, l’agent pourra alors clôturer la maintenance
+en utilisant les bonnes codifications, puis envoyer un mail sur contactST@verisure.fr pour surveiller
+l’installation pendant 2 jours. </p>
+
+                                    <p>Ensuite, l’agent doit laisser une note sur SBN « mail envoyé »</p>
+
+                                        <p>Le doc sera levé à J+2 par les masters uniquement si le défaut est résolu et que aucun autre défaut n’est présent.</p>
+        </section>
+
+      
+      <p></p>
+      <section class="panel">
+        <p><strong>POINTS DE CONTROLE AVANT LA CLOTURE DE LA MAINTENANCE ET ENVOI MAIL CONTACTST </strong></p>
+
+        <div class="table-wrap">
+            <table class="moonshot-table maintenance-table">
+              <tbody>
+                <tr>
+                  <td>Vérifier la conformité des images</td>
+                  <td> Vérifier le test de communication et le niveau GSM (minimum 2 en 4G)</td>
+                </tr>
+                <tr>
+                  <td>Vérifier l’absence de défaut technique</td>
+                  <td> Vérifier le respect des quotas d’installation des éléments (Orions, BAC, Caméras, etc.)</td>
+                </tr>
+                <tr>
+                  <td>Si caméra sur l’installation vérifier le nombre des caméras, présence ou pas d’un hub, niveau RSSI
+                    et niveau batterie pour les caméras. </td>
+                  <td>  Si BAC sur l’installation, Vérifier les informations du BAC dans inst.Comp (case acti, clé tir, date
+d’expiration) et test BAC via protom. </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>Si l’ES a finalisé sa maintenance avec l’aide du Support Technique, quelques points de
+vérifications supplémentaires seront nécessaires en plus des précédentes cités ci-dessus :
+</p>
+<ul class="list">
+    <li> Vérifier la bonne réception de l’ensemble des signaux</li>
+    <li> Passer la centrale en mode CCS</li>
+    <li>  Si BAC, vérifier la case acti et tester le bac.</li>
+  </ul>
+      </section>
+<p></p>
+
+
+      
+
+
+
+
+
+
+        <img src="../../assets/img/img-referentiel/img-servplus-reseau-CSL.PNG" alt="servplus-reseau-CSL" />
+
+        <p>Pour rappel, le CSL nous aide dans le processus de la prise de décision. Il est essentiel de réaliser une analyse
+            complémentaire de l’installation afin de déterminer si le service plus doit être pris en charge ou non.
+        <strong>Par ailleurs, il est impératif que le boitier CSL soit à jour lors du test CSL, sans quoi la demande de service plus est
+    refusée par le support technique.</strong></p>
+
+      <p>Si le technicien ne possède pas de boitier CSL, il devra faire plusieurs tests comme déplacer la centrale, changer la
+sim, opérateur, et en dernier changer la centrale.</p>
+
+<p><strong>Lorsqu'un Technicien contacte le support technique pour une demande de Service Plus réseau sur le système
+    MOONSHOT, Il est impératif qu'un changement de centrale vers une version 1.8 soit réalisé avant la mise en place du
+    Service Plus.
+    Si le changement de centrale vers la version 1.8 n'est pas réalisé, le support technique ne pourra pas accepter la mise
+    en place du Service Plus.</strong></p>
+</section>
+<p></p>
+<section class="panel">
+    <h2>PROCEDER</h2>
+    <p>Après vérification, <strong>le support technique</strong> peut décider en fonction des éléments fournis (Test réseau CSL ou résultats des tests
+        réalisés par le technicien) de passer l’installation en service plus réseau. Dans ce cas de figure l’agent doit procéder comme
+        suit :</p>
+
+        <p><strong>1-</strong> Sur Infopoint, accéder à la maintenance du technicien. Dans éditer, j’enregistre les codifications s’il y a du déstockage. Le support 
+            technique ne clôture pas pour l’instant, mais enregistre seulement</p>
+        <p><strong>2-</strong> Créer et envoyer le ticket au technicien via MGO (catégorie historisation).</p>
+
+            <img src="../../assets/img/img-referentiel/img-servplus-reseau-fsm 1.PNG" alt="servplus-reseau-fsm 1" />
+
+        <p><strong>3-</strong> Quand le technicien aura envoyé le rapport, le support technique reçoit une notification dans le canal teams dédié. Le support 
+            technique doit liker la notification obligatoirement.</p>
+        <p><strong>4-</strong>  Le support technique peut retourner sur la maintenance du technicien, éditer et codifier en INC-INCIDENT/MAINTENANCE NON 
+            FINALISEE puis clore la maintenance en FINI.</p>
+        <p><strong>5-</strong> le support technique ouvre une maintenance pour le service plus (call type DEPANNAGE/ COMMUNICATION pour les service plus 
+            réseau). Et indiquer SERVPLUS dans le LOG.</p>
+
+            <img src="../../assets/img/img-referentiel/img-servplus-reseau-fsm 2.PNG" alt="servplus-reseau-fsm 2" />
+  </section>
+  <p></p>
+
+</main>
+</body>
+</html>
